@@ -1,8 +1,14 @@
 public enum Vehicles {
-    BMW(30000, "red"),
-    KIA(15000, "white");
-    final int price;
-    private final String color;
+//    BMW(30000, "red"),
+    BMW(30000),
+//    KIA(15000, "white");
+    KIA(15000);
+    public final int price;
+    private final String color = "червоний";
+
+    Vehicles(int price) {
+        this.price = price;
+    }
 
     @Override
     public String toString() {
@@ -17,8 +23,8 @@ public enum Vehicles {
         return color;
     }
 
-    Vehicles(int price, String color) {
-        this.price = price;
-        this.color = color;
-    }
+//    Vehicles(int price, String color) {
+//        this.price = price;
+//        this.color = color;
+//    }
 }
