@@ -4,7 +4,7 @@ public enum Vehicles {
 //    KIA(15000, "white");
     KIA(15000);
     public final int price;
-    private final String color = "червоний";
+    private String color = "червоний";
 
     Vehicles(int price) {
         this.price = price;
@@ -21,6 +21,9 @@ public enum Vehicles {
 
     public String getColor() {
         return color;
+    }
+    public void setColor(String color) {
+        this.color = color;
     }
 
 //    Vehicles(int price, String color) {

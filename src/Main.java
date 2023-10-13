@@ -5,6 +5,7 @@ public class Main {
         System.out.println("Ціна BMW : " + Vehicles.BMW.price);
 
         Vehicles kia = Vehicles.KIA;
+        kia.setColor("білий");
         System.out.println(kia);
     }
 }
